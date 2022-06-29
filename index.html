@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>MyApp</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+
+    </head>
+    <body>
+
+        <div id="logo">
+            <h1>Mein cooler Shop</h1>
+
+        </div>
+        <div id="navigation">
+            <a class="link" onclick="produktAnzeigen(1)">👕 T-Shirt</a>
+            <a class="link" onclick="produktAnzeigen(2)">👟 Schuh</a>
+
+        </div>
+
+        <div class="produkt" id="t-shirt">
+            <img src="https://images.unsplash.com/photo-1571945153237-4929e783af4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="T-Shirt">
+            <h2>T-Shirt</h2>
+            <p>
+                Kauft dieses super cooles T-Shirt. Dadurch wird ein wunderliches Leben beginnen.
+            </p>
+            <div id="smart-button-container">
+                <div style="text-align: center;">
+                  <div id="paypal-button-t-shirt"></div>
+                </div>
+              </div>
+        </div>
+
+        <div class="produkt" id="schuh">
+            <img src="https://images.unsplash.com/photo-1605261208548-b820419672ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2NodWhlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Schuhe">
+            <h2>Schuh</h2>
+            <p>Bitte kauft diese super Schuhe. Es ist so schön</p>
+            <div id="smart-button-container">
+                <div style="text-align: center;">
+                  <div id="paypal-button-schuh"></div>
+                </div>
+              </div>
+        </div>
+
+        <div id="footer">
+            <p>
+                Impressum<br>
+                Test Str. 1234<br>
+                25123 Teststadt<br>
+                Deutschland<br>
+            </p>
+
+
+        </div>
+        <script src="logik.js"></script>
+    </body>
+</html>
